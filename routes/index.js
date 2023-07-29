@@ -8,7 +8,7 @@ var router = express.Router();
 passport.use(new GoogleStrategy({
   clientID: process.env['GOOGLE_CLIENT_ID'],
   clientSecret: process.env['GOOGLE_CLIENT_SECRET'],
-  callbackURL: '/oauth2/redirect/google',
+  callbackURL: 'https://pooja-oauth.onrender.com/oauth2/redirect/google',
   scope: [ 'email','profile' ]
 }, async function verify(issuer, profile, cb) {
   try{
