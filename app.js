@@ -7,8 +7,8 @@ var passport = require('passport')
 var MongoStore = require('connect-mongo');
 var session = require('express-session');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/index.js');
+var usersRouter = require('./routes/users.js');
 
 var app = express();
 
